@@ -1,0 +1,97 @@
+/* CustomerComponent.module.css */
+
+.customerContainer {
+    padding: 20px;
+    max-width: 1100px;
+
+    margin: auto; /* Center the container */
+    max-height: 85vh;
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+  
+  .tableContainer {
+    overflow-x: auto;
+  }
+  
+  .customerTable {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .tablerow:hover{
+    background-color: lightsteelblue;
+  }
+  
+  .columnHeader {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  .tableCell {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .filterContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filterInput {
+    margin-right: 8px;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #a19c9c; /* Border bottom */
+    transition: border-bottom 0.3s ease; /* Add transition for smooth effect */
+    background: none;
+    color: white;
+  }
+  
+  .filterInput:focus {
+    border-bottom: 2px solid #007bff; /* Adjust the color for the focus state */
+  }
+  
+  .filterInput:hover {
+    border-bottom: 2px solid #007bff; /* Adjust the color for the focus state */
+  }
+
+  .sortIcon {
+    cursor: pointer;
+    margin-left: 4px;
+    font-size: 14px; 
+  }
+  
+
+  .tableContainer::-webkit-scrollbar {
+    width: 2px;
+    height: 6px;
+  }
+  
+  .tableContainer::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  .tableContainer::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .customerContainer::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .customerContainer::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+
+  .customerContainer::-webkit-scrollbar-track {
+    background-color: transparent;
+  }

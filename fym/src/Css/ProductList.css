@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Dancing+Script&family=Poppins:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.suhas-product-list{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 25%;
+}
+
+.back a{
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.back a:hover{
+  color: white;
+}
+
+.maincontainer{
+    /* padding: 10px; */
+    width: 100vw; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.Productcontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rebeccapurple; */
+    overflow: hidden;
+    /* width: 25%; */
+    /* border-radius: 5px; */
+  }
+  
+  .image {
+    display: block;
+    width: 300px;
+    height: 270px;
+    max-height: 200px;
+    /* border-top-right-radius: 20px;
+    border-top-left-radius: 20px; */
+}
+  
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:linear-gradient(transparent,black);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .Productcontainer:hover .overlay {
+    height: 45%;
+  }
+  
+  .suhas-product-list .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  .encapsulated{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px ;
+    /* box-shadow: 1px 2px 10px lightgray; */
+    /* border-radius: 10px;
+    height: 300px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-top-right-radius: 20px; */
+    /* border-top-left-radius: 20px; */
+  }
+
+  .editdelete{
+    width: 100%;
+    display: flex;
+    
+  }
+
+  .editdelete button{
+    
+    text-decoration: none;
+    /* background: rgb(0 0 0 / 25%); */
+    color: #7B3F00;
+    transition: all 0.3s;
+    border: none;
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    /* background-color: #C19A6B ; */
+    /* border:1px solid #7B3F00; */
+    border-radius: 5px;
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
+  }
+
+  .editdelete button:hover{
+    background-color: rgb(192, 192, 192) ;
+    color: #9F2B68;
+  }
+
+  .noprod{
+    width: 100vw;
+    height: 98vh;
+    /* background-image: url('./images/noprodbackfinal.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    object-fit: cover;
+    margin: 0;
+  }
+
+  .mainhead{
+    width: 100%;
+  }
+
+  #back1:hover{
+    color: rgb(78, 196, 236);
+  }
+  

@@ -1,0 +1,85 @@
+.customer-orders-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.order-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.order-details {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.order-details strong {
+  font-weight: bold;
+  margin-right: 5px;
+  width: 150px; /* Fixed width for labels */
+  display: inline-block;
+  color: #333;
+}
+
+.error-message {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+/* Hover effect for order details */
+.order-details:hover {
+  color: #f6316b; /* Pink theme color */
+}
+
+/* Hover effect for order ID */
+.order-details p:nth-child(odd):hover {
+  color: #f6316b; /* Pink theme color */
+}
+
+/* Hover effect for order status */
+.order-details p:nth-child(6):hover {
+  color: #f6316b; /* Pink theme color */
+}
+
+/* Transition for hover effect */
+.order-details p {
+  transition: color 0.3s ease;
+}
+
+.order-filter {
+  margin-bottom: 20px;
+}
+
+.order-filter label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #f6316b; /* Pink theme color */
+}
+
+.order-filter select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.order-filter select:hover {
+  border-color: #f6316b; /* Pink theme color */
+}
+
+.order-filter select:focus {
+  outline: none;
+  border-color: #f6316b; /* Pink theme color */
+}

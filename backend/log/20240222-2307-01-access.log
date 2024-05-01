@@ -1,0 +1,2 @@
+::1 - - [22/Feb/2024:17:36:00 +0000] "GET /api/customer/cart HTTP/1.1" 304 - "http://localhost:3000/customer/cart" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+::1 - - [22/Feb/2024:17:36:00 +0000] "GET /api/customer/cart HTTP/1.1" 304 - "http://localhost:3000/customer/cart" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"

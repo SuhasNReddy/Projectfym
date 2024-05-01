@@ -1,0 +1,8 @@
+{
+    "Locations": [
+      { "id": 1, "name": "Tirupati and Tirumala" },
+      { "id": 2, "name": "Vijayawada" },
+      { "id": 3, "name": "Vizag (Visakhapatnam)" },
+      { "id": 4, "name": "Araku Valley" }
+    ]
+}

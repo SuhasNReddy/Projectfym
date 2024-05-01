@@ -1,0 +1,345 @@
+/* Add these styles to your BusinessInterface.css file */
+.maincon {
+  position: relative;
+  
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin-left: 0.4rem;
+  /* border-radius: 10px;
+  background: #d4d0d000;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgb(0 0 0 / 11%); */
+  }
+  
+  /* Styles for .mainheader, .box1, .box2, header, etc. go here */
+  /* body{
+    background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw1ODIyMjY1fHxlbnwwfHx8fHw%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+
+  .maincontainer {
+    border-radius: 20px;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 4px 10px lightgrey;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Styles for .catagories, .subcatagories, .span, .input[type="checkbox"], button, etc. go here */
+  
+  .servicecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .services {
+    min-height: 150px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    box-shadow: 2px 4px 10px lightgrey;
+    background: rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+  }
+  
+  .services span {
+    margin: 8px;
+    padding: 8px;
+    height: fit-content;
+    min-width: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: darkslategrey;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  .addservice {
+    width: 400px;
+    height: 500px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  /* Styles for input, textarea, .ava, .success, etc. go here */
+  
+  .maincon button {
+    
+    background-color: darkolivegreen;
+    color: white;
+    border-radius: 8px;
+    font-size: medium;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 0.7rem;
+  }
+
+  /* Animation for category buttons */
+.catagory {
+    /* ... (your existing styles) */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .catagory:hover {
+    transform: scale(1.05);
+  }
+  
+  .Subcategory{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  /* Animation for subcategory items */
+  .Subcategory span {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    box-shadow: 1px 2px 6px 0px rgb(0, 0 ,0 ,0.3);
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .Subcategory span input{
+    display: none;  }
+
+  
+  .Subcategory span:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Button hover animation */
+  .maincon button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin: 0.7rem;
+  }
+
+  
+  
+  .maincon button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+
+  .maincon button:disabled{
+    /* background-color: darkolivegreen; */
+    cursor: inherit;
+  }
+  
+  
+  
+   button:hover {
+    /* color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391; */
+  }
+  
+  .maincon button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .maincon button:hover::before {
+    width: 250%;
+  }
+  
+
+  /* Animation for service buttons */
+  .services span {
+    /* ... (your existing styles) */
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .services span:hover {
+    transform: scale(1.05);
+    background-color: rgb(0, 0, 0);
+    color: grey;
+  }
+  
+
+
+  .selected-sub {
+    margin: 20px 0; /* Add margin for spacing */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Add gap between items */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .selected-sub span {
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .selected-sub span:hover {
+    transform: scale(1.05);
+  }
+
+  /* Updated styles for your BusinessInterface.css file */
+
+/* Form container */
+.form-container {
+  /* margin: 20px; */
+  padding: 20px;
+  /* border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+
+/* Form labels */
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Text input styles */
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container textarea {
+  width: 60%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #236cac;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #444;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+.form-container textarea:focus {
+  border-color: #70cdf8;
+  background-color: #fff;
+}
+
+/* Checkbox input styles */
+.form-container input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+/* Submit button styles */
+.form-container button[type="submit"] {
+  margin: 0;
+  margin-top: 0.7rem;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #0056a9;
+}
+
+/* Success text styles */
+.success-text {
+  color: #3db84a;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.form-container {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  align-items: center;
+}
+.form-fields {
+  width: 50%;
+}
+
+.image-preview {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.image-label {
+  margin-bottom: 10px;
+}
+
+.image-input {
+  display: block;
+  margin-top: 5px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.SuccessText {
+  margin-top: 20px; /* Spacing for success text */
+}
+
+
+.businesslabel{
+  display: flex;
+  flex-direction: column;
+}

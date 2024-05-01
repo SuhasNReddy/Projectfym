@@ -1,0 +1,67 @@
+{
+  "queries": [
+    {
+      "name": "Tejeswar",
+      "email": "tejeswar@gmail.com",
+      "subject": "Login error please...",
+      "queryText": "Please resolve my problem as soon as possible.",
+      "id": "1"
+    },
+    {
+      "name": "suhas",
+      "email": "suhas@gmail.com",
+      "subject": "query1",
+      "queryText": "lorem epsum",
+      "id": "Rg-liu0"
+    },
+    {
+      "name": "uashiashdb",
+      "email": "aadad@gmail.com",
+      "subject": "siu aif ",
+      "queryText": "us hdinassdv",
+      "id": "B5oCMog"
+    },
+    {
+      "name": "devi@gmai.com",
+      "email": "devi@gmai.com",
+      "subject": "devi@gmai.com",
+      "queryText": "devi@gmai.com",
+      "id": "u6zTr93"
+    },
+    {
+      "name": "devi@gmai.com",
+      "email": "devi@gmai.com",
+      "subject": "devi@gmai.com",
+      "queryText": "devi@gmai.com",
+      "id": "5wzGhOU"
+    },
+    {
+      "name": "devi@gmai.com",
+      "email": "devi@gmai.com",
+      "subject": "devi@gmai.com",
+      "queryText": "devi@gmai.com",
+      "id": "Mim9EQX"
+    },
+    {
+      "name": "safaf",
+      "email": "asfaf@gmail.com",
+      "subject": "asfkasf asf asf fafjsafasfsffsfASassa",
+      "queryText": "afasvsv dv  \nasav\nDS\nfass  hhh lsh sld d\n",
+      "id": "TfvfMmp"
+    }
+  ],
+  "users": [
+    {
+      "userId": "dean",
+      "email": "dean@gmail.com",
+      "password": "dean123",
+      "id": "8cc8"
+    },
+    {
+      "userId": "suhas",
+      "email": "suhas@gmail.com",
+      "password": "Suhas@123",
+      "id": "8cc9"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  api-server:
+    build: ./backend
+    image: suhas143/api-server:latest   
+    container_name: node-api
+    restart: always
+    ports:
+      - "4000:4000"
+    volumes: 
+      - ./backend:/usr/src/app
+    networks:
+      - mern-network
+
+  frontend:
+    build: ./fym
+    image: suhas143/frontend:latest   
+    container_name: react-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./fym:/usr/src/App
+    networks:
+      - mern-network
+
+networks:
+  mern-network:
+    driver: bridge
