@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:4000",
+  "proxy": "https://projectfym-1.onrender.com",
   "name": "fym",
   "version": "0.1.0",
   "private": true,
