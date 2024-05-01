@@ -64,7 +64,7 @@ const CustomerComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/admin/customerdetails');
+        const response = await fetch('https://projectfym-1.onrender.com/api/admin/customerdetails');
         if (!response.ok) {
           throw new Error(`Error fetching data: ${response.statusText}`);
         }
