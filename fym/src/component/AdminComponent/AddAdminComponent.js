@@ -36,7 +36,7 @@ const AddAdminComponent = () => {
         }
 
         try {
-            const response = await axios.post('/api/admin/add', {
+            const response = await axios.post('https://projectfym-1.onrender.com/api/admin/add', {
                 userId, email, password
             });
 
