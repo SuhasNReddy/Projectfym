@@ -16,7 +16,7 @@ const ProductList = (props) => {
         if (!props.user) {
           throw new Error("Not Authorized");
         }
-        const response = await fetch('/api/businessproducts_get', {
+        const response = await fetch('https://projectfym-1.onrender.com/api/businessproducts_get', {
           method: "GET",
           headers: {
             'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const ProductList = (props) => {
 
   const handleDelete = async (productId) => {
     try {
-      const response = await fetch(`/api/businessdeleteproduct/${productId}`, {
+      const response = await fetch(`https://projectfym-1.onrender.com/api/businessdeleteproduct/${productId}`, {
         method: "DELETE",
         headers: {
           'Content-Type': 'application/json',
