@@ -7,7 +7,7 @@
     "node": ">=16.20.1"
   },
   "scripts": {
-    "test": "npm test",
+    "test": "mocha --reporter spec",
     "start": "nodemon app.js"
   },
   "keywords": [],
@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
-
+    "axios": "^1.6.7",
     "cors": "^2.8.5",
 
     "dotenv": "^16.3.1",
