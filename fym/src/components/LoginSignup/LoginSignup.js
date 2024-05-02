@@ -71,7 +71,7 @@ const CustomerLoginSignup = () => {
     // Handle Sign Up or Login based on the action
     if (action === 'Sign Up' && name && email && password) {
       try {
-        const response = await fetch('/api/customer/signup', {
+        const response = await fetch('https://projectfym-1.onrender.com/api/customer/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ const CustomerLoginSignup = () => {
       }
     } else if (action === 'Login' && email && password) {
       try {
-        const response = await fetch('/api/customer/login', {
+        const response = await fetch('https://projectfym-1.onrender.com/api/customer/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
