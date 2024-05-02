@@ -39,7 +39,7 @@ const Contact = (props) => {
   
     try {
       // Change the URL to your Express server's endpoint
-      const response = await fetch('/api/admin/queries', {
+      const response = await fetch('https://projectfym-1.onrender.com/api/admin/queries', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
