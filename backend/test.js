@@ -3,7 +3,7 @@ const axios = require('axios');
 
 // Set up Axios instance with base URL for your API
 const api = axios.create({
-  baseURL: 'http://localhost:4000' // Update with your API's base URL
+  baseURL: 'http://localhost:4000/api' // Update with your API's base URL
 });
 
 describe('Customer API Routes', function() {
