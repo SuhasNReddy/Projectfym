@@ -21,7 +21,7 @@ export const Shop = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch('https://projectfym-1.onrender.com/api/customer/products');
+                const response = await fetch('/api/customer/products');
                 if (!response.ok) throw new Error('Error fetching products');
                 const data = await response.json();
                 setProducts(data);

@@ -16,7 +16,7 @@ const Wishlist = () => {
   const removeFromWish = async (productId) => {
     try {
       // Make an API call to remove the item from the wishlist in the database
-      const response = await fetch(`https://projectfym-1.onrender.com/api/customer/removeFromWishlist/${productId}`, {
+      const response = await fetch(`/api/customer/removeFromWishlist/${productId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${customerUser.token}`,
@@ -41,7 +41,7 @@ const Wishlist = () => {
       try {
         // Check if customerUser is not null before making the request
         if (customerUser && customerUser.token) {
-          const response = await fetch("https://projectfym-1.onrender.com/api/customer/wishlist", {
+          const response = await fetch("/api/customer/wishlist", {
             method: "GET",
             headers: {
               Authorization: `Bearer ${customerUser.token}`

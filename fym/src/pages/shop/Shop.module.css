@@ -1,0 +1,238 @@
+.container {
+  margin-top: 0px;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #f6316b;
+}
+
+.message {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #f6316b;
+}
+
+.filterPanel {
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.filterItem {
+  margin: 10px;
+  flex-basis: 20%;
+  min-width: 150px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.rangeInput {
+  height: 8px;
+  -webkit-appearance: none; 
+  appearance: none;
+  outline: none;
+}
+
+.rangeThumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #f6316b;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.valueSpan {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); 
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.productCard {
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.productImage {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+
+.productDescription {
+  font-size: 16px;
+  color: #444;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.errorMessage {
+  color: red;
+}
+
+
+.container {
+margin-top: 0px;
+padding: 8px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.title {
+font-size: 32px;
+margin-bottom: 20px;
+color: #f6316b;
+}
+
+.message {
+font-size: 18px;
+margin-bottom: 8px;
+color: #f6316b;
+}
+
+.filterPanel {
+padding: 20px;
+margin: 20px auto;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+background-color: #fff;
+width: 80%;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.filterItem {
+margin: 10px;
+flex-basis: 20%;
+min-width: 150px;
+}
+
+.label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+color: #333;
+}
+
+.input, .select {
+width: 100%;
+padding: 8px;
+margin-top: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+background-color: #f0f0f0;
+}
+
+.rangeInput {
+height: 8px;
+-webkit-appearance: none; 
+appearance: none;
+outline: none;
+}
+
+.rangeThumb {
+-webkit-appearance: none; 
+appearance: none;
+width: 20px;
+height: 20px;
+background: #f6316b;
+cursor: pointer;
+border-radius: 50%;
+}
+
+.valueSpan {
+display: inline-block;
+padding-top: 5px;
+}
+
+.productsGrid {
+display: grid;
+grid-template-columns: repeat(4, minmax(200px, 1fr)); 
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.productCard {
+border-radius: 15px;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+transition: transform 0.3s ease-in-out;
+}
+
+.productImage {
+width: 100%;
+max-width: 180px;
+height: auto;
+border-radius: 10px;
+margin-bottom: 0px;
+}
+
+.productDescription {
+font-size: 16px;
+color: #444;
+}
+
+.productCard:hover {
+transform: translateY(-5px);
+}
+
+.errorMessage {
+color: red;
+}

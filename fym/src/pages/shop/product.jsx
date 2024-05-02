@@ -17,7 +17,7 @@ const Product = (props) => {
     const addToCart = async (productId) => {
         console.log("inside add to cart", productId, customerUser)
         try {
-            const response = await fetch(`https://projectfym-1.onrender.com/api/customer/cart/${productId}`, {
+            const response = await fetch(`/api/customer/cart/${productId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ const Product = (props) => {
 
     const addToWish = async (productId) => {
         try {
-            const response = await fetch(`https://projectfym-1.onrender.com/api/customer/wishlist/${productId}`, {
+            const response = await fetch(`/api/customer/wishlist/${productId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

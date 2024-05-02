@@ -37,7 +37,7 @@ const Checkout = (props) => {
         throw new Error('Not authorized. Please log in.');
       }
 
-      const response = await fetch('https://projectfym-1.onrender.com/api/customer/checkout', {
+      const response = await fetch('/api/customer/checkout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

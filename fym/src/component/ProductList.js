@@ -218,7 +218,7 @@ const ProductDescription = ({ product,user }) => {
 
       // Make a request to update the product
       const response = await fetch(
-        `https://projectfym-1.onrender.com/api/businessupdateproduct_put/${product._id}`,
+        `/api/businessupdateproduct_put/${product._id}`,
         {
           method: 'PUT',
           headers: {

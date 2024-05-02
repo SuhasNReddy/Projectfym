@@ -24,7 +24,7 @@ export const Cart = (props) => {
           throw new Error("User is not authorized. Please log in.");
         }
 
-        const response = await fetch("https://projectfym-1.onrender.com/api/customer/cart", {
+        const response = await fetch("/api/customer/cart", {
           headers: {
             Authorization: `Bearer ${customerUser.token}`,
           },

@@ -64,7 +64,7 @@ function AddLocation({ setLocations, user }) {
         name: cityName
       };
 
-      fetch(`https://projectfym-1.onrender.com/api/businesslocationadd_post`, {
+      fetch(`/api/businesslocationadd_post`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ function LocationApp({ user }) {
   const [locations, setLocations] = useState([]);
 
   useEffect(() => {
-    fetch(`https://projectfym-1.onrender.com/api/businesslocations_get`, {
+    fetch(`/api/businesslocations_get`, {
       headers: {
         'Authorization': `Bearer ${user.token}`
       }
@@ -107,7 +107,7 @@ function LocationApp({ user }) {
   }, [user.token]);
 
   const handleRemoveLocation = (locationId) => {
-    fetch(`https://projectfym-1.onrender.com/api/businesslocationdelete_post/${locationId}`, {
+    fetch(`/api/businesslocationdelete_post/${locationId}`, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${user.token}`
