@@ -14,7 +14,7 @@ const RemoveCustomerComponent = () => {
 
     const fetchCustomers = async () => {
         try {
-            const response = await axios.get('/api/admin/allCustomers');
+            const response = await axios.get('https://projectfym-1.onrender.com/api/admin/allCustomers');
             setCustomers(response.data);
         } catch (error) {
             setErrorMessage('Failed to fetch customers');
@@ -30,7 +30,7 @@ const RemoveCustomerComponent = () => {
         setSuccessMessage('');
 
         try {
-            const response = await axios.delete(`/api/admin/removeCustomer/${customerId}`);
+            const response = await axios.delete(`https://projectfym-1.onrender.com/api/admin/removeCustomer/${customerId}`);
             if (response.status === 200) {
                 setSuccessMessage('Customer removed successfully');
                 setCustomers(customers.filter(customer => customer.id !== customerId));
