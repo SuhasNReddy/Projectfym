@@ -49,7 +49,7 @@ function Form({
     }
 
     try {
-      const response = await fetch('/api/businessinsertProduct_post', {
+      const response = await fetch('https://projectfym-1.onrender.com/api/businessinsertProduct_post', {
         method: 'POST',
         headers: {
           'authorization': `Bearer ${user.token}`,
