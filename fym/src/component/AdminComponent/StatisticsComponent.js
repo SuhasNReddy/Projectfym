@@ -10,7 +10,7 @@ const StatisticsComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/admin/statistics');
+        const response = await fetch('https://projectfym-1.onrender.com/api/admin/statistics');
         if (!response.ok) {
           throw new Error(`Error fetching data: ${response.statusText}`);
         }
