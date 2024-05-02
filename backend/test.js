@@ -1,6 +1,6 @@
-const assert = require('assert');
-const axios = require('axios');
 
+const axios = require('axios');
+const mocha = require('mocha');
 
  const baseURL: 'http://localhost:4000/api' // Update with your API's base URL
 
