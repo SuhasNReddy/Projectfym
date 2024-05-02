@@ -30,7 +30,7 @@ const Adminlogin = () => {
     }
 
     try {
-      const response = await axios.post('/api/admin/login', {
+      const response = await axios.post('https://projectfym-1.onrender.com/api/admin/login', {
         userId,
         email,
         password

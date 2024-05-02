@@ -9,7 +9,7 @@ const CartItem = (props) => {
     
     const handleAddToCart = async () => {
         try {
-            const response = await fetch(`/api/customer/cart/${id}`, {
+            const response = await fetch(`https://projectfym-1.onrender.com/api/customer/cart/${id}`, {
                 method: "POST",
                 headers: {
                     Authorization: `Bearer ${props.customerUser.token}`
@@ -36,7 +36,7 @@ const CartItem = (props) => {
 
     const handleRemoveFromCart = async () => {
         try {
-            const response = await fetch(`/api/customer/removeFromCart/${id}`, {
+            const response = await fetch(`https://projectfym-1.onrender.com/api/customer/removeFromCart/${id}`, {
                 method: "POST",
                 headers: {
                     Authorization: `Bearer ${props.customerUser.token}`

@@ -35,7 +35,7 @@ const ProductsComponent = () => {
   useEffect(() => { 
     const fetchProducts = async () => {
       try {
-        const response = await fetch('/api/admin/allproductdetails');
+        const response = await fetch('https://projectfym-1.onrender.com/api/admin/allproductdetails');
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }

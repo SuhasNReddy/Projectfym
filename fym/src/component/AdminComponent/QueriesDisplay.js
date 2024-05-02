@@ -8,7 +8,7 @@ const QueriesDisplay = () => {
   useEffect(() => {
     const fetchQueries = async () => {
       try {
-        const response = await fetch('/api/admin/queries');
+        const response = await fetch('https://projectfym-1.onrender.com/api/admin/queries');
         if (!response.ok) {
           throw new Error('Failed to fetch');
         }
@@ -26,7 +26,7 @@ const QueriesDisplay = () => {
   const onDeleteQuery = async (id) => {
     console.log('inside delete ',id);
     try {
-      const response = await fetch(`/api/admin/queries/${id}`, {
+      const response = await fetch(`https://projectfym-1.onrender.com/api/admin/queries/${id}`, {
         method: 'DELETE',
       });
   

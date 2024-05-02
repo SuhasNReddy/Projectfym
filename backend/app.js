@@ -8,7 +8,7 @@ const multer = require('multer');
 const app = express();
 const morgan=require("morgan");
 const rfs=require("rotating-file-stream");
-
+const cors = require('cors');
 let db; 
 
 
@@ -28,7 +28,7 @@ connectToDb((error)=>{
     }
 })
 
-
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
@@ -68,6 +68,10 @@ const swaggerSpec = swaggerJSDoc(options);
 const swaggerUi = require('swagger-ui-express');
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
+app.get('/', (req, res)=>{
+  res.send('<h1>SERVER is running<h1>');
+});
 
 
 app.use((error,req,res,next)=>{

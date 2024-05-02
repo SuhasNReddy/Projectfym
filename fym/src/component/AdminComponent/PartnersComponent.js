@@ -158,7 +158,7 @@ useEffect(() => {
     // Fetch business data from the database
     const fetchBusinessData = async () => {
       try {
-        const response = await fetch('/api/admin/businessdetails'); // Replace 'your-backend-api-endpoint-here' with your actual backend API endpoint
+        const response = await fetch('https://projectfym-1.onrender.com/api/admin/businessdetails'); // Replace 'your-backend-api-endpoint-here' with your actual backend API endpoint
         const data = await response.json();
 
         // Ensure data is an array
@@ -179,7 +179,7 @@ useEffect(() => {
   const updateStatus = async (id, status) => {
     try {
       // Send a PATCH request to your backend API to update the status
-      const response = await fetch(`/api/admin/business/${id}`, {
+      const response = await fetch(`https://projectfym-1.onrender.com/api/admin/business/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

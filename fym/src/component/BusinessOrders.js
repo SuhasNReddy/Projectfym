@@ -10,7 +10,7 @@
     useEffect(() => {
       const fetchOrders = async () => {
         try {
-          const response = await fetch('/api/businessorders_get', {
+          const response = await fetch('https://projectfym-1.onrender.com/api/businessorders_get', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
@@ -36,7 +36,7 @@
     const handleClick = async (id) => {
       console.log(id,"hanwjhwvh");
       try {
-        const response = await fetch(`/api/businessorders_updatestatus/${id}`, {
+        const response = await fetch(`https://projectfym-1.onrender.com/api/businessorders_updatestatus/${id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

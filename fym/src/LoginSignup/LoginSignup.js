@@ -48,7 +48,7 @@ const LoginSignup = (props) => {
             if(action==="Sign Up"){
                 const body = {name,email,password};
                 
-                const result =await fetch('/api/business_signup_post',{
+                const result =await fetch('https://projectfym-1.onrender.com/api/business_signup_post',{
                     method:'POST',
                     headers:{'Content-Type':'application/json'},
                     body:JSON.stringify(body)
@@ -68,7 +68,7 @@ const LoginSignup = (props) => {
             }
             else{
                 const body = {email,password};
-                const result =await fetch('/api/business_login_post',{
+                const result =await fetch('https://projectfym-1.onrender.com/api/business_login_post',{
                     method:'POST',
                     headers:{'Content-Type':'application/json'},
                     body:JSON.stringify(body)

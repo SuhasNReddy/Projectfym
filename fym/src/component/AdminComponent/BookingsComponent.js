@@ -51,7 +51,7 @@ const BookingsComponent = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch('/api/admin/orders');
+        const response = await fetch('https://projectfym-1.onrender.com/api/admin/orders');
         if (!response.ok) {
           throw new Error('Failed to fetch orders');
         }
