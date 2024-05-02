@@ -18,7 +18,7 @@ const BusinessStatus = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/business/metric/orders', {
+        const response = await fetch('https://projectfym-1.onrender.com/api/business/metric/orders', {
           headers: {
             'Authorization': `Bearer ${props.user.token}`,
             'Content-Type': 'application/json'
