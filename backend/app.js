@@ -67,17 +67,17 @@ const swaggerSpec = swaggerJSDoc(options);
 
 const swaggerUi = require('swagger-ui-express');
 
-<<<<<<< HEAD
+
 app.get('/', (req, res)=>{
   res.send('<h1>SERVER is running<h1>');
 });
 
-=======
+
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.get('/', (req, res)=>{
   res.send('<h1>SERVER is running<h1>');
 });
->>>>>>> 36c4eb781a44e091df7abd7bf6d2231ce6c132fc
+
 
 app.use((error,req,res,next)=>{
     console.error(error.stack);
