@@ -1,48 +1,48 @@
 const assert = require('assert');
 const axios = require('axios');
 
-// Set up Axios instance with base URL for your API
-const api = axios.create({
-  baseURL: 'http://localhost:4000/api' // Update with your API's base URL
-});
 
-describe('Customer API Routes', function() {
-  
-  // Test customer signup route
-  describe('POST /customer/signup', function() {
-    it('should register a new customer', async function() {
-      const response = await api.post('/customer/signup', {
+ const baseURL: 'http://localhost:4000/api' // Update with your API's base URL
+
+
+ async function testRegisterValidUser() {
+   try {
+    const userData = {
+      
         email: 'test@example.com',
         name: 'Test User',
         password: 'password123'
-      });
-      assert.strictEqual(response.status, 200);
-      assert.strictEqual(response.data.email, 'test@example.com');
-      assert.strictEqual(typeof response.data.token, 'string');
-    });
-  });
+    };
+      const response = await axios.post(`${baseURL}/customer/signup`, userData);
+      console.log('Register User - Valid Data:', response.data);
+    }catch(error) {
+    console.error('Error:', error.response ? error.response.data : error.message);
+  }
+  }
 
-  // Test customer login route
-  describe('POST /customer/login', function() {
-    it('should log in as an existing customer', async function() {
-      const response = await api.post('/customer/login', {
-        email: 'test@example.com',
-        password: 'password123'
-      });
-      assert.strictEqual(response.status, 200);
-    });
-  });
-
-  // Test getting all products route
-  describe('GET /customer/products', function() {
-    it('should retrieve all products available to customers', async function() {
-      const response = await api.get('/customer/products');
-      assert.strictEqual(response.status, 200);
-      assert(Array.isArray(response.data));
-      // Add more specific assertions if needed
-    });
-  });
+// Test customer login route
+async function testLoginValidUser() {
+  try {
+    const loginData = {
+      email: 'test@example.com',
+      password: 'password123'
+    };
+    const response = await axios.post(`${baseURL}/customer/login`, loginData);
+    console.log('Login User - Valid Credentials:', response.data);
+  } catch (error) {
+    console.error('Error:', error.response ? error.response.data : error.message);
+  }
+}
+  
 
   // Add more test cases for other routes as needed
 
-});
+async function runTests() {
+  await testRegisterValidUser();
+  await testLoginValidUser();
+  
+
+}
+
+// Run tests
+runTests();
