@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.20.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --reporter spec",
     "start": "nodemon app.js"
   },
   "keywords": [],
@@ -28,6 +31,8 @@
     "rotating-file-stream": "^3.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0"
   }
 }
