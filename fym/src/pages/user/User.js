@@ -12,7 +12,7 @@ const updatePassword = async (passwordData, authToken) => {
 
     // Placeholder for API call to update password on the backend
     // Replace this with your actual API call
-    const response = await fetch('/api/customer/updatePassword', {
+    const response = await fetch('https://projectfym-1.onrender.com/api/customer/updatePassword', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${authToken}`,
