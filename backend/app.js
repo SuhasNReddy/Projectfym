@@ -49,14 +49,14 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Your API Documentation',
+      title: 'API Documentation',
       version: '1.0.0',
-      description: 'API documentation for your website',
+      description: 'API documentation for website',
     },
     servers: [
       {
         url: 'https://projectfym-1.onrender.com/api',
-        description: 'Deployed server',
+        description: 'Development server',
       },
     ],
   },
