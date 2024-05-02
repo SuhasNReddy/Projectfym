@@ -55,7 +55,7 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:4000/api',
+        url: 'https://projectfym-1.onrender.com/api',
         description: 'Development server',
       },
     ],
