@@ -172,29 +172,6 @@ router.get('/businessdetails', async (req, res) => {
 });
 
 
-/**
- * @swagger
- * /admin/queries:
- *   post:
- *     summary: Insert a new query
- *     tags: [Admin]
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               question:
- *                 type: string
- *               details:
- *                 type: string
- *     responses:
- *       200:
- *         description: Query submitted successfully
- *       500:
- *         description: Error submitting query
- */
 
 router.post('/queries',admincontrollers.insertQuery_post);
 
