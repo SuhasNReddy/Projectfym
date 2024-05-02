@@ -21,7 +21,7 @@ const ProductDesc = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await fetch(`/api/customer/products/${id}`);
+                const response = await fetch(`https://projectfym-1.onrender.com/api/customer/products/${id}`);
                 if (!response.ok) {
                     throw new Error('Error fetching product details');
                 }
@@ -42,7 +42,7 @@ const ProductDesc = () => {
 
     const addToCart = async () => {
         try {
-            const response = await fetch(`/api/customer/cart/${id}`, {
+            const response = await fetch(`https://projectfym-1.onrender.com/api/customer/cart/${id}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ const ProductDesc = () => {
 
     const addToWish = async () => {
         try {
-            const response = await fetch(`/api/customer/wishlist/${id}`, {
+            const response = await fetch(`https://projectfym-1.onrender.com/api/customer/wishlist/${id}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -108,7 +108,7 @@ const ProductDesc = () => {
                 text: reviewText,
             };
     
-            const response = await fetch(`/api/customer/reviews/${id}`, {
+            const response = await fetch(`https://projectfym-1.onrender.com/api/customer/reviews/${id}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
