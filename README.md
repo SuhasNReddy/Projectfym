@@ -1,5 +1,5 @@
 Overview
-This project is an E-Commerce Web Application that allows customers to browse and purchase products. It includes features such as user authentication, product listing, and checkout functionality.
+This project is an Event managing Application that allows customers to browse and make use of services that are available. It includes features such as user authentication, product listing, and checkout functionality.
 
 Technologies Used
 Frontend:
